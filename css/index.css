@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 70em) {
+  body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+body,
+html,
+main {
+  background: #f5f5f5;
+  font-size: 16px;
+}
+
+header {
+  background: #364f6b;
+}
+
+header h1 {
+  color: #3fc1c9;
+  font-size: 4rem;
+}
+
+header h1 span {
+  color: #fc5185;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
+
+article {
+  max-width: 30rem;
+}
+
+nav {
+  background: #3fc1c9;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  color: white;
+  font-weight: 800;
+}
+/*# sourceMappingURL=index.css.map */
