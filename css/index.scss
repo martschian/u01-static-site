@@ -36,14 +36,17 @@ body {
     font-size: 1.25rem;
   }
 }
-img {
+img,
+video,
+embed {
   max-width: 100%;
+  border-bottom: 5px $color-contrast solid;
 }
 h2 {
   color: $color-contrast;
   font-family: "Lobster", cursive;
   font-size: 2rem;
-  width: 100vw;
+  width: 100%;
 
   @include breakpoint(desktop) {
     font-size: 4rem;
@@ -70,8 +73,14 @@ body > header {
     }
   }
 }
-#about {
-  padding: 1rem;
+#about,
+#info {
+  padding: 2rem;
+  border-bottom: 5px $color-contrast solid;
+}
+
+#info {
+  background: $color-base;
 }
 
 #cases {
@@ -90,8 +99,7 @@ body > header {
   }
   section {
     background: $color-neutral;
-    margin-top: 2rem;
-    max-width: 80vw;
+    margin-bottom: 2rem;
     @include breakpoint(desktop) {
       max-width: 40vw;
     }
