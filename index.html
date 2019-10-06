@@ -14,62 +14,61 @@
       <nav>
         <ul>
           <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#cases">Cases</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <figure>
+      <picture>
+        <source
+          media="(min-width: 800px)"
+          srcset="
+            images/thomas-lefebvre-gp8BLyaTaA0-unsplash.jpg            
+          "
+        />
+        <source
+          media="(min-width: 375px)"
+          srcset="
+            images/thomas-lefebvre-gp8BLyaTaA0-unsplash-small.jpg            
+          "
+        />
         <img
-          src="images/thomas-lefebvre-gp8BLyaTaA0-unsplash.jpg"
+          src="images/thomas-lefebvre-gp8BLyaTaA0-unsplash-small.jpg"
           alt="Typing on a Mac"
         />
-        <figcaption>
-          Photo by
-          <a
-            href="https://unsplash.com/@imthebear?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-            >Thomas Lefebvre</a
-          >
-          on
-          <a
-            href="/s/photos/coding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-            >Unsplash</a
-          >
-        </figcaption>
-      </figure>
-      <article>
+      </picture>
+      <article id="about">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus
-          vestibulum mattis ullamcorper velit sed ullamcorper. Lectus urna duis
-          convallis convallis. Nisl suscipit adipiscing bibendum est ultricies
-          integer quis. Dignissim suspendisse in est ante in nibh mauris.
-          Viverra suspendisse potenti nullam ac tortor vitae purus faucibus
-          ornare. Imperdiet nulla malesuada pellentesque elit eget gravida cum
-          sociis natoque. Neque convallis a cras semper auctor neque vitae
-          tempus. Egestas pretium aenean pharetra magna ac placerat vestibulum.
-          Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Pretium
-          fusce id velit ut tortor pretium viverra suspendisse potenti. Maecenas
-          ultricies mi eget mauris pharetra. Sociis natoque penatibus et magnis
-          dis parturient montes nascetur ridiculus. Egestas congue quisque
-          egestas diam.
+          We are a full-service web agency ready and able to help you with every
+          need your company might have.
         </p>
-        <p>
-          Molestie a iaculis at erat pellentesque adipiscing commodo elit at.
-          Feugiat nisl pretium fusce id velit ut. Bibendum ut tristique et
-          egestas quis ipsum suspendisse ultrices gravida. Ante metus dictum at
-          tempor commodo ullamcorper a lacus. Vitae tempus quam pellentesque
-          nec. Quis viverra nibh cras pulvinar mattis nunc sed blandit. Mattis
-          ullamcorper velit sed ullamcorper morbi. Cursus mattis molestie a
-          iaculis at erat pellentesque. Lorem ipsum dolor sit amet consectetur
-          adipiscing elit duis. Ut porttitor leo a diam sollicitudin tempor.
-          Laoreet suspendisse interdum consectetur libero id. Viverra aliquet
-          eget sit amet tellus cras. Vitae auctor eu augue ut lectus arcu
-          bibendum at varius.
-        </p>
-        <p>
+      </article>
+      <article id="cases">
+        <section>
+          <header>
+            <figure>
+              <img src="images/myh.jpg" alt="" />
+              <figcaption>Screenshot of myh.se</figcaption>
+            </figure>
+          </header>
+          <p>
+            Myndigheten för yrkeshögskolan är en tillståndsgivande.
+          </p>
+        </section>
+        <section>
+          <header>
+            <figure>
+              <img src="images/trello.jpg" alt="" />
+              <figcaption>Screenshot of trello.com</figcaption>
+            </figure>
+          </header>
+          <p>
+            Trello is a tool for collaboration.
+          </p>
+        </section>
+        <section>
           Vitae et leo duis ut diam quam nulla porttitor massa. Quis vel eros
           donec ac odio. Nisl purus in mollis nunc sed id. Nibh praesent
           tristique magna sit amet purus gravida quis blandit. Velit euismod in
@@ -86,18 +85,8 @@
           phasellus vestibulum lorem sed. Mauris nunc congue nisi vitae suscipit
           tellus mauris a. Nunc sed velit dignissim sodales ut. Morbi non arcu
           risus quis.
-        </p>
-        <p>
-          Donec ultrices tincidunt arcu non sodales neque sodales ut. In nibh
-          mauris cursus mattis molestie a. Leo vel orci porta non pulvinar neque
-          laoreet. Metus vulputate eu scelerisque felis. Urna nec tincidunt
-          praesent semper feugiat nibh sed. At erat pellentesque adipiscing
-          commodo elit at imperdiet dui. Semper risus in hendrerit gravida.
-          Venenatis tellus in metus vulputate eu scelerisque felis. Aliquam
-          faucibus purus in massa tempor. Massa placerat duis ultricies lacus.
-          Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices.
-        </p>
-        <e>
+        </section>
+        <section>
           Semper risus in hendrerit gravida rutrum quisque non. Malesuada
           pellentesque elit eget gravida. Ut diam quam nulla porttitor massa.
           Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.
@@ -110,7 +99,7 @@
           molestie a iaculis at erat. Suscipit tellus mauris a diam. Enim neque
           volutpat ac tincidunt vitae semper quis lectus. Vulputate eu
           scelerisque felis imperdiet proin fermentum.
-        </p>
+        </section>
       </article>
     </main>
     <footer>

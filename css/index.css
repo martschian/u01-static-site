@@ -28,11 +28,13 @@ body {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 body,
 html,
-main,
-figure,
-img {
+main {
   background: #f5f5f5;
   max-width: 100vw;
 }
@@ -52,17 +54,40 @@ header h1 span {
   font-size: 2rem;
 }
 
-article {
+#cases {
   max-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3fc1c9), color-stop(95%, #364f6b));
+  background: linear-gradient(180deg, #3fc1c9 0%, #364f6b 95%);
 }
 
-article > p {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+@media screen and (min-width: 70em) {
+  #cases {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+#cases section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+@media screen and (min-width: 70em) {
+  #cases section {
+    max-width: 40vw;
+  }
 }
 
 nav {
@@ -84,10 +109,15 @@ nav li a {
   font-weight: 800;
 }
 
+nav li a:after {
+  content: " | ";
+}
+
 footer {
   background: #364f6b;
   padding: 1rem;
   color: white;
+  font-size: 1rem;
 }
 
 footer a {
@@ -98,7 +128,7 @@ footer a {
 figcaption {
   font-size: 0.6rem;
   margin-top: -1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
   margin-left: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
