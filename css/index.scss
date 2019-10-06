@@ -33,12 +33,11 @@ body {
   flex-direction: column;
   font-size: 1rem;
   @include breakpoint(desktop) {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 }
 img,
-video,
-embed {
+video {
   max-width: 100%;
   border-bottom: 5px $color-contrast solid;
 }
@@ -47,7 +46,6 @@ h2 {
   font-family: "Lobster", cursive;
   font-size: 2rem;
   width: 100%;
-
   @include breakpoint(desktop) {
     font-size: 4rem;
   }
@@ -65,7 +63,7 @@ body > header {
   h1 {
     color: $color-accent;
     font-size: 4rem;
-    text-align: center;
+    padding-left: 1rem;
     span {
       color: $color-contrast;
       font-family: "Lobster", cursive;
@@ -103,7 +101,6 @@ body > header {
     @include breakpoint(desktop) {
       max-width: 40vw;
     }
-    flex: 1 0 auto;
     p {
       padding: 1rem;
     }
