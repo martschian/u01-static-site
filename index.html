@@ -13,9 +13,9 @@
       <h1>Unswank<span>.dev</span></h1>
       <nav>
         <ul>
-          <li><a href="#">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#cases">Cases</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -23,9 +23,10 @@
     <main>
       <picture>
         <source
-          media="(min-width: 800px)"
+          media="(min-width: 767px)"
           srcset="
-            images/thomas-lefebvre-gp8BLyaTaA0-unsplash.jpg            
+            images/thomas-lefebvre-gp8BLyaTaA0-unsplash.jpg,
+            images/thomas-lefebvre-gp8BLyaTaA0-unsplash-2x.jpg 2x
           "
         />
         <source
@@ -40,18 +41,34 @@
         />
       </picture>
       <article id="about">
+        <h2>Who We Are</h2>
         <p>
-          We are a full-service web agency ready and able to help you with every
-          need your company might have.
+          Unswank Dev is a full-service web agency ready and able to help you
+          with every need your company might have.
         </p>
       </article>
       <article id="cases">
         <section>
           <header>
-            <figure>
-              <img src="images/myh.jpg" alt="" />
-              <figcaption>Screenshot of myh.se</figcaption>
-            </figure>
+            <h3>MYH</h3>
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="
+                    images/myh.jpg            
+                  "
+              />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                    images/myh-small.jpg            
+                  "
+              />
+              <img
+                src="images/myh-small.jpg"
+                alt="Myndigheten för yrkeshögskolan"
+              />
+            </picture>
           </header>
           <p>
             Myndigheten för yrkeshögskolan är en tillståndsgivande.
@@ -59,50 +76,30 @@
         </section>
         <section>
           <header>
-            <figure>
-              <img src="images/trello.jpg" alt="" />
-              <figcaption>Screenshot of trello.com</figcaption>
-            </figure>
+            <h3>Trello</h3>
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="
+                      images/trello.jpg            
+                    "
+              />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                      images/trello-small.jpg            
+                    "
+              />
+              <img src="images/trello-small.jpg" alt="Trello.com" />
+            </picture>
           </header>
           <p>
             Trello is a tool for collaboration.
           </p>
         </section>
-        <section>
-          Vitae et leo duis ut diam quam nulla porttitor massa. Quis vel eros
-          donec ac odio. Nisl purus in mollis nunc sed id. Nibh praesent
-          tristique magna sit amet purus gravida quis blandit. Velit euismod in
-          pellentesque massa placerat duis ultricies. Fames ac turpis egestas
-          sed tempus urna et pharetra pharetra. Blandit volutpat maecenas
-          volutpat blandit aliquam etiam. Ut faucibus pulvinar elementum
-          integer. Potenti nullam ac tortor vitae purus faucibus ornare
-          suspendisse sed. Gravida dictum fusce ut placerat orci nulla
-          pellentesque dignissim enim. Malesuada nunc vel risus commodo viverra
-          maecenas accumsan lacus vel. Ornare lectus sit amet est. Mauris
-          pharetra et ultrices neque ornare aenean euismod elementum. Habitant
-          morbi tristique senectus et netus. Tincidunt tortor aliquam nulla
-          facilisi cras fermentum odio eu. Magna fermentum iaculis eu non diam
-          phasellus vestibulum lorem sed. Mauris nunc congue nisi vitae suscipit
-          tellus mauris a. Nunc sed velit dignissim sodales ut. Morbi non arcu
-          risus quis.
-        </section>
-        <section>
-          Semper risus in hendrerit gravida rutrum quisque non. Malesuada
-          pellentesque elit eget gravida. Ut diam quam nulla porttitor massa.
-          Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.
-          Integer quis auctor elit sed vulputate mi sit amet. Morbi tincidunt
-          augue interdum velit euismod in. Sed lectus vestibulum mattis
-          ullamcorper velit sed ullamcorper morbi tincidunt. Pretium fusce id
-          velit ut tortor pretium. Faucibus pulvinar elementum integer enim
-          neque volutpat ac tincidunt. Eros in cursus turpis massa tincidunt.
-          Facilisis leo vel fringilla est ullamcorper eget. Mauris cursus mattis
-          molestie a iaculis at erat. Suscipit tellus mauris a diam. Enim neque
-          volutpat ac tincidunt vitae semper quis lectus. Vulputate eu
-          scelerisque felis imperdiet proin fermentum.
-        </section>
       </article>
     </main>
-    <footer>
+    <footer id="contact">
       <p>Contact us at <a href="mailto:info@unswank.org">/dev/null</a></p>
       <p>&copy;2019 Unswank Dev</p>
     </footer>
