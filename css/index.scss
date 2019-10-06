@@ -41,6 +41,10 @@ video {
   max-width: 100%;
   border-bottom: 5px $color-contrast solid;
 }
+embed {
+  width: 80vw;
+  height: 30vh;
+}
 h2 {
   color: $color-contrast;
   font-family: "Lobster", cursive;
@@ -49,6 +53,11 @@ h2 {
   @include breakpoint(desktop) {
     font-size: 4rem;
   }
+}
+
+h3 {
+  border-bottom: 5px $color-contrast solid;
+  padding: 0.5rem;
 }
 
 body > header {
@@ -100,6 +109,7 @@ body > header {
     margin-bottom: 2rem;
     @include breakpoint(desktop) {
       max-width: 40vw;
+      margin-bottom: 0;
     }
     p {
       padding: 1rem;
@@ -117,12 +127,15 @@ nav {
 
   li {
     display: inline-block;
+    &:after {
+      content: " | ";
+    }
+    &:last-child:after {
+      content: "";
+    }
     a {
       color: white;
       font-weight: 800;
-      &:after {
-        content: " | ";
-      }
     }
   }
 }

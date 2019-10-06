@@ -41,7 +41,7 @@
           alt="Typing on a Mac"
         />
       </picture>
-      <article id="about">
+      <article id="about" aria-label="Text about Unswank Dev">
         <h2>Who We Are</h2>
         <p>
           Unswank Dev is a full-service web agency ready and able to help you
@@ -50,20 +50,24 @@
           is important: your content and your needs.
         </p>
       </article>
-      <article id="info">
+      <article id="info" aria-label="Miscellaneous info">
         <h2>Other Info</h2>
-        <video src="assets/test.mp4" controls>
+        <video
+          src="assets/test.mp4"
+          controls
+          aria-label="Slow zoom on the Chas Academy logo"
+        >
           Your browser doesn't seem to support the video tag. You can
           <a href="assets/test.mp4">download the video</a> instead.
         </video>
         <embed src="assets/test.pdf" type="application/pdf" />
         <p></p>
       </article>
-      <article id="cases">
+      <article id="cases" aria-label="Examples of work by Unswank Dev">
         <h2>Our Work</h2>
         <section>
           <header>
-            <h3>MYH</h3>
+            <h3>MYH.se</h3>
             <picture>
               <source
                 media="(min-width: 800px)"
@@ -119,7 +123,7 @@
         </section>
       </article>
     </main>
-    <footer id="contact">
+    <footer id="contact" aria-label="Contact info and copyright notice">
       <p>Contact us at <a href="mailto:info@unswank.org">/dev/null</a></p>
       <p>&copy;2019 Unswank Dev</p>
     </footer>

@@ -30,6 +30,11 @@ video {
   border-bottom: 5px #fc5185 solid;
 }
 
+embed {
+  width: 80vw;
+  height: 30vh;
+}
+
 h2 {
   color: #fc5185;
   font-family: "Lobster", cursive;
@@ -41,6 +46,11 @@ h2 {
   h2 {
     font-size: 4rem;
   }
+}
+
+h3 {
+  border-bottom: 5px #fc5185 solid;
+  padding: 0.5rem;
 }
 
 body > header {
@@ -104,6 +114,7 @@ body > header h1 span {
 @media screen and (min-width: 70em) {
   #cases section {
     max-width: 40vw;
+    margin-bottom: 0;
   }
 }
 
@@ -125,13 +136,17 @@ nav li {
   display: inline-block;
 }
 
+nav li:after {
+  content: " | ";
+}
+
+nav li:last-child:after {
+  content: "";
+}
+
 nav li a {
   color: white;
   font-weight: 800;
-}
-
-nav li a:after {
-  content: " | ";
 }
 
 footer {
